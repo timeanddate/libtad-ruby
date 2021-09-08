@@ -3,6 +3,7 @@ require 'services/date_calculator'
 require 'services/holidays'
 require 'services/onthisday'
 require 'services/places'
+require 'services/tides'
 require 'services/time'
 
 require 'types/astronomy/astronomy_current'
@@ -37,6 +38,10 @@ require 'types/places/location_ref'
 require 'types/places/place'
 require 'types/places/region'
 
+require 'types/tides/station'
+require 'types/tides/station_info'
+require 'types/tides/tide'
+
 require 'types/time/datetime'
 require 'types/time/dst_entry'
 require 'types/time/time'
@@ -57,6 +62,7 @@ module LibTAD
     include LibTAD::Client::HolidaysService
     include LibTAD::Client::OnThisDayService
     include LibTAD::Client::PlacesService
+    include LibTAD::Client::TidesService
     include LibTAD::Client::TimeService
 
     # The endpoint the client connects to.
