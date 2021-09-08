@@ -27,11 +27,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.17)
+  bundler (>= 2.2.10)
   libtad!
   rdoc
   rspec (~> 3.0)
   yard
 
 BUNDLED WITH
-   1.17.2
+   2.2.27
