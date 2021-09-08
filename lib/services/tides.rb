@@ -2,14 +2,17 @@ module LibTAD
   class Client
     # Tides API.
     module TidesService
-      # @return [Array<::LibTAD::OnThisDay::Event>, Array<::LibTAD::OnThisDay::Person>, Array<::LibTAD::OnThisDay::Person>]
-      # @param month [Integer] The month for which the events should be retrieved. Defaults to current month.
-      # @param day [Integer] The day for which the events should be retrieved. Defaults to current day.
-      # @param lang [String or Array<String>] Specify the ISO639 Language Code or a list of codes for the texts.
-      # @param types [Symbol or Array<Symbol>] Specify an event type or a list of event types to filter by.
-      # @see ::LibTAD::OnThisDay::EVENT_TYPE
+      # @return [Array<::LibTAD::Tides::Station>]
+      # @param placeid [String] Specify the ID or a list of ID's for a location which you would like to get tidal data for.
+      # @param onlyhighlow [Boolean] Whether to return every point per interval, or just the highest and lowest points.
+      # @param start_date [String] Start of the requested time interval.
+      # @param end_date [String] End of the requested time interval.
+      # @param radius [Float] Search for tidal stations within the radius from the requested place.
+      # @param subordinate [Boolean] Whether or not to resolve subordinate or just reference stations.
+      # @param interval [Integer] How many minutes between each data point. Supported values: 5 min, 15 min, 30 min, 60 min.
+      # @param localtime [Boolean] Whether input and output timestamps should be resolved to local time or not.
       #
-      # The On This Day service can be used to retrieve events, births and deaths for a specific date.
+      # The Tides service can be used to retrieve predicted tidal data over a given time interval for one or multiple places.
       def get_tidal_data(
         placeid:,
         onlyhighlow: nil,
