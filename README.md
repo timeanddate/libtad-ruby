@@ -79,7 +79,7 @@ datetime = ::LibTAD::TADTime::TADDateTime.new.now
 utc, locations = client.convert_time(from_id: place, datetime: datetime)
 ```
 
-Convert time from a location using an [ISO 8601](https://services.timeanddate.com/api/doc/v3/type-isotime.html)-string:
+Convert time from a location using an [ISO 8601](https://dev.timeanddate.com/docs/external-references#ISO8601)-string:
 
 ```ruby
 utc, locations = client.convert_time(from_id: place, iso: "2015-04-21T16:45:00")
@@ -105,7 +105,7 @@ Get daylight saving time for a specified year:
 result = client.get_daylight_savings_time(year: 2014)
 ```
 
-Get daylight saving time for a specified [ISO3166-1 (Alpha2)](https://services.timeanddate.com/api/doc/v3/type-isocountry.html) country code:
+Get daylight saving time for a specified [ISO3166-1 (Alpha2)](https://dev.timeanddate.com/docs/external-references#ISO3166) country code:
 
 ```ruby
 result = client.get_daylight_savings_time(country: "no")
@@ -114,14 +114,14 @@ result = client.get_daylight_savings_time(country: "no")
 Holidays Service
 --------------------------------------
 
-Get all holidays for a country by [ISO3166-1 (Alpha2)](https://services.timeanddate.com/api/doc/v3/type-isocountry.html) country code:
+Get all holidays for a country by [ISO3166-1 (Alpha2)](https://dev.timeanddate.com/docs/external-references#ISO3166) country code:
 
 ```ruby
 country = "no"
 result = client.get_holidays(country: country)
 ```
 
-Get all holidays for a country by year and [ISO3166-1 (Alpha2)](https://services.timeanddate.com/api/doc/v3/type-isocountry.html) country code:
+Get all holidays for a country by year and [ISO3166-1 (Alpha2)](https://dev.timeanddate.com/docs/external-references#ISO3166) country code:
 
 ```ruby
 country = "no"
