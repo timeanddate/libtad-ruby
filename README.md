@@ -2,7 +2,7 @@ Time And Date Ruby API
 ======================================
 [![Build Status](https://app.travis-ci.com/timeanddate/libtad-ruby.svg?token=rE5e9bKU1VpTiyEVqLNS&branch=master)](https://app.travis-ci.com/timeanddate/libtad-ruby) ![Gem](https://img.shields.io/gem/v/libtad)
 
-An access key and a secret key is required to use the API. If you are not already a Time and Date API user, please see our [API offers](httpss://services.timeanddate.com/api/packages/) to get a free 3 month trial. For more information, see our [API Services page](https://services.timeanddate.com/).
+An access key and a secret key is required to use the API. If you are not already a Time and Date API user, please see our [API offers](https://dev.timeanddate.com/free-trial) to get a free 3 month trial. For more information, see our [API Services page](https://dev.timeanddate.com/).
 
 
 Get started
