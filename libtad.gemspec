@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email        = 'api@timeanddate.com'
   spec.license      = 'MIT'
   spec.homepage     = 'https://timeanddate.com'
-  spec.version      = '0.1.0'
+  spec.version      = '0.2.0'
 
   spec.require_paths = ["lib"]
 
